@@ -10,5 +10,5 @@ public class theatreSquare_1A{
         long result = (long) Math.ceil((double) n / a) * (long) Math.ceil((double) m / a);
         System.out.println(result);
     }
-    sc.close();
+
 }
