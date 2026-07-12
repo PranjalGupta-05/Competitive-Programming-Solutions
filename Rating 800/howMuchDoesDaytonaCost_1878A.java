@@ -54,5 +54,6 @@ public class howMuchDoesDaytonaCost_1878A {
             }
             t--;
         }
+        sc.close();
     }
 }
