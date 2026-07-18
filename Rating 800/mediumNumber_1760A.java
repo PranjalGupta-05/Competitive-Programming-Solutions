@@ -14,5 +14,6 @@ public class mediumNumber_1760A {
             int median=sum-max-min;
             System.out.println(median);
         }
+        sc.close();
     }
 }
