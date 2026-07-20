@@ -8,6 +8,6 @@ public class expression_479A {
         int c = sc.nextInt();
         sc.close();
 
-        System.out.println(Math.max(a+b*c, Math.max(a*(b+c), Math.max(a*b*c, (a+b)*c))));
+        System.out.println(Math.max(a+b*c, Math.max(a*(b+c), Math.max(a*b*c, Math.max((a+b)*c, a+b+c)))));
     }
 }
