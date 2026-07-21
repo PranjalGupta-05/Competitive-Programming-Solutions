@@ -12,5 +12,6 @@ public class gravityFlip_405A {
         for (int cube : cubes){
             System.out.print(cube + " ");
         }
+        scanner.close();
     }
 }
