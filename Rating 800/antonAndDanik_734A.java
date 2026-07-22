@@ -5,9 +5,9 @@ public class antonAndDanik_734A {
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
         int anton=0,danik=0;
-        while(n-- >0){
-            Character c=sc.next().charAt(0);
-            if(c=='A'){
+        String s=sc.next();
+        for(int i=0;i<n;i++){
+            if(s.charAt(i)=='A'){
                 anton++;
             }
             else{
