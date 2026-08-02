@@ -4,9 +4,16 @@ public class chatRoom_58A{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        if(s.subSequence(0, s.length()).toString().contains("hello")){
+        String target = "hello";
+        int j = 0;
+        for (int i = 0; i < s.length() && j < target.length(); i++) {
+            if (s.charAt(i) == target.charAt(j)) {
+                j++;
+            }
+        }
+        if (j == target.length()) {
             System.out.println("YES");
-        }else{
+        } else {
             System.out.println("NO");
         }
         sc.close();
