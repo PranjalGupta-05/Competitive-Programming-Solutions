@@ -15,5 +15,6 @@ public class vanyaAndFence_677A {
             }
         }
         System.out.println(width);
+        sc.close();
     }
 }
