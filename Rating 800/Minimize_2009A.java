@@ -10,5 +10,6 @@ public class Minimize_2009A {
             int c=(a+b)/2;
             System.out.println((c-a)+(b-c));
         }
+        sc.close();
     }
 }
