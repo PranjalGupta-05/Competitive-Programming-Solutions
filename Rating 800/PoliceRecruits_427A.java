@@ -21,5 +21,6 @@ public class PoliceRecruits_427A {
             }
         }
         System.out.println(crimes);
+        sc.close();
     }
 }
