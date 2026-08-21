@@ -9,7 +9,7 @@ public class BuyaShovel_732A {
                 return i;
             }
         }
-        return -1; // This line should never be reached based on the problem constraints
+        return -1;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
