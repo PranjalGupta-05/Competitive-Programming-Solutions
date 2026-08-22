@@ -8,13 +8,15 @@ public class SumofRoundNumbers_1352A {
             int n=sc.nextInt();
             int count=0;
             StringBuilder result=new StringBuilder();
-            for(int i=0;i<4;i++){
+            int multiplier=1;
+            while(n>0){
                 int rem=n%10;
                 if(rem!=0){
                     count++;
-                    result.append(rem*(int)Math.pow(10,i)+" ");
+                    result.append(rem * multiplier).append(" ");
                 }
                 n/=10;
+                multiplier *= 10;
             }
             System.out.println(count);
             System.out.println(result.toString());
