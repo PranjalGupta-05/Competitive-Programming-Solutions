@@ -8,12 +8,30 @@ public class MakeAP_1624B{
             int a=sc.nextInt();
             int b=sc.nextInt();
             int c=sc.nextInt();
-            if((b%a==0 && c%a==0) || (a%b==0 && c%b==0) || (a%c==0 && b%c==0)){
+            boolean isPossible = false;
+            // Check if we can form an AP by multiplying 'a'
+            int newA=2*b-c;
+            if(newA>0 && newA%a==0){
+                isPossible=true;
+            } 
+            // Check if we can form an AP by multiplying 'b'
+            else if((a+c)%(2*b)==0){
+                isPossible=true;
+            } 
+            // Check if we can form an AP by multiplying 'c'
+            else{
+                int newC=2*b-a;
+                if(newC>0 && newC%c==0){
+                    isPossible = true;
+                }
+            }
+            if(isPossible){
                 System.out.println("YES");
             } 
             else{
                 System.out.println("NO");
             }
         }
+        sc.close();
     }
 }
