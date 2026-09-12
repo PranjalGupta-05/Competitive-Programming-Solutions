@@ -11,23 +11,15 @@ public class ilyaAndBankAccount_313A{
             int temp=-1*num;
             int lastDigit=temp%10;
             int secondLastDigit=(temp/10)%10;
-            int maxi=Math.max(lastDigit, secondLastDigit);
-            Character maxiChar=Integer.toString(maxi).charAt(0);
             String s=Integer.toString(num);
-            String ans="";
-            for(int i=0;i<s.length();i++){
-                if(s.charAt(i)==maxiChar){
-                    continue;
-                } 
-                else{
-                    ans+=s.charAt(i);
-                }
+            String ans;
+            if(lastDigit>secondLastDigit){
+                ans=s.substring(0, s.length()-1);
+            } 
+            else{
+                ans=s.substring(0, s.length()-2)+s.substring(s.length()-1);
             }
-            if(ans.equals("")){
-                System.out.println(0);
-            } else {
-                System.out.println(ans);
-            }
+            System.out.println(Integer.parseInt(ans));
         }
     }
 }
