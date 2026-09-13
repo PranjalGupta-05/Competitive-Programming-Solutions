@@ -7,9 +7,9 @@ public class AntonAndLetters_443A {
         Set<Character> set=new HashSet<>();
         for(int i=0;i<str.length();i++){
             char ch=str.charAt(i);
-            // if(ch>='a' && ch<='z'){
+            if(ch>='a' && ch<='z'){
                 set.add(ch);
-            // }
+            }
         }
         System.out.println(set.size());
     }
