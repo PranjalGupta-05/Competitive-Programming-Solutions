@@ -24,5 +24,6 @@ public class BlackSquare_431A {
             }
         }
         System.out.println(sum);
+        sc.close();
     }
 }
