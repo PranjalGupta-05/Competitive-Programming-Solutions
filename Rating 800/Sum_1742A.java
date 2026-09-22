@@ -14,5 +14,6 @@ public class Sum_1742A {
                 System.out.println("NO");
             }
         }
+        sc.close();
     }
 }

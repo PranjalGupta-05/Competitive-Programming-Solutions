@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class CandiesandTwoSisters_1335A {
+public class MinutesBeforetheNewYear_1283A {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
-            long n = sc.nextLong();
-            System.out.println((n - 1) / 2);
-            
+            int h = sc.nextInt();
+            int m = sc.nextInt();
+            System.out.println((23 - h) * 60 + (60 - m));
         }
         sc.close();
     }
