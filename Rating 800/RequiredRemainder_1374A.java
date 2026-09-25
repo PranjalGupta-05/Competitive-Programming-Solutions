@@ -5,10 +5,12 @@ public class RequiredRemainder_1374A {
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-- >0){
-            int a=sc.nextInt();
-            int b=sc.nextInt();
+            int x=sc.nextInt();
+            int y=sc.nextInt();
             int n=sc.nextInt();
-            System.out.println((n/b)*b+a);
+            int q=(n-y)/x;
+            int k=(q*x)+y;
+            System.out.println(k);
         }
         sc.close();
     }
