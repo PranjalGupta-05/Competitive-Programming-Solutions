@@ -8,5 +8,6 @@ public class MagicalSticks_1371A{
             int n=sc.nextInt();
             System.out.println((n+1)/2);
         }
+        sc.close();
     }
 }
