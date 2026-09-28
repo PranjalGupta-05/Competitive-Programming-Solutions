@@ -15,7 +15,7 @@ public class StairPeakorNeither_1950A{
                 System.out.println("STAIR");
             }
             else{
-                System.out.println("NEITHER");
+                System.out.println("NONE");
             }
         }
         sc.close();
