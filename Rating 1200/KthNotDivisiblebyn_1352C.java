@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class KthNotDivisiblebyn_1352C{
+public class KthNotDivisiblebyn_1352C{ 
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
