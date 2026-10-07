@@ -17,21 +17,15 @@ public class FairDivision_1472B{
                     cntOf2++;
                 }
             }
-            int totalCoins=cntOf1+cntOf2;
-            if(totalCoins%2==1){
-                System.out.println("NO");
+            if(cntOf1%2==0 && cntOf2%2==0){
+                System.out.println("YES");
             }
             else{
-                if(cntOf1%2==0 && cntOf2%2==0){
+                if(cntOf2%2==1 && cntOf1%2==0 && cntOf1>0){
                     System.out.println("YES");
                 }
                 else{
-                    if(cntOf2%2==1 && cntOf1%2==0 && cntOf1>0){
-                        System.out.println("YES");
-                    }
-                    else{
-                        System.out.println("NO");
-                    }
+                    System.out.println("NO");
                 }
             }
         }
