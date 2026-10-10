@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Buttons_1858B{
+public class Buttons_1858A{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
@@ -8,13 +8,13 @@ public class Buttons_1858B{
             int a=sc.nextInt();
             int b=sc.nextInt();
             int c=sc.nextInt();
-            int sum=a+b+c;
-            if(sum%2==0){
+            if(a+(c%2)>b){
+                System.out.println("First");
+            } 
+            else{
                 System.out.println("Second");
             }
-            else{
-                System.out.println("First");
-            }
         }
+        sc.close();
     }
 }
