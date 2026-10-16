@@ -3,7 +3,7 @@ import java.util.*;
 public class OrdinaryNumbers_1520B {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int t= sc.nextInt();
+        int t=sc.nextInt();
         while(t-- >0){
             int n=sc.nextInt();
             int count=0;
