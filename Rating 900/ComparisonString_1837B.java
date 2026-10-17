@@ -17,7 +17,7 @@ public class ComparisonString_1837B{
                 }
                 maxLen=Math.max(maxLen,currLen);
             }
-            System.out.println(maxLen);
+            System.out.println(maxLen+1);
         }
     }
 }
