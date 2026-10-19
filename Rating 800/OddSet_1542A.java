@@ -18,10 +18,10 @@ public class OddSet_1542A{
                 }
             }
             if(count==0){
-                System.out.println("YES");
+                System.out.println("Yes");
             }
             else{
-                System.out.println("NO");
+                System.out.println("No");
             }
         }
     }
