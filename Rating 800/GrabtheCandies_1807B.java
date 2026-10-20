@@ -17,10 +17,10 @@ public class GrabtheCandies_1807B{
                 }
             }
             if(sum>0){
-                System.out.println("No");
+                System.out.println("YES");
             }
             else{
-                System.out.println("Yes");
+                System.out.println("NO");
             }
         }
     }
