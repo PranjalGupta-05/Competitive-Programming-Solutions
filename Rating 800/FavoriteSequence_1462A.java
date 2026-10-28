@@ -28,5 +28,6 @@ public class FavoriteSequence_1462A{
             }
             System.out.println();
         }
+        sc.close();
     }
 }
