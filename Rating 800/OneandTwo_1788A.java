@@ -7,29 +7,28 @@ public class OneandTwo_1788A {
         while(t-- >0){
             int n=sc.nextInt();
             int[] arr=new int[n];
+            int totalTwos=0;
             for(int i=0;i<n;i++){
                 arr[i]=sc.nextInt();
-            }
-            int left=0;
-            int right=n-1;
-            int prodLeft=1;
-            int prodRight=1;
-            while(left<=right){
-                prodLeft*=arr[left];
-                prodRight*=arr[right];
-                if(prodLeft==prodRight){
-                    System.out.println(left);
-                    break;
-                }
-                else if(prodLeft<prodRight){
-                    left++;
-                }
-                else{
-                    right--;
+                if(arr[i]==2){
+                    totalTwos++;
                 }
             }
-            if(left>right){
+            if(totalTwos%2!=0){
                 System.out.println(-1);
+            } 
+            else{
+                int leftTwos=0;
+                int requiredTwos=totalTwos/2;
+                for(int i=0;i<n;i++){
+                    if(arr[i]==2){
+                        leftTwos++;
+                    }
+                    if(leftTwos==requiredTwos){
+                        System.out.println(i+1);
+                        break;
+                    }
+                }
             }
         }
     }
