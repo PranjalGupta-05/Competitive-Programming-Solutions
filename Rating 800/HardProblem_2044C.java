@@ -45,6 +45,6 @@ public class HardProblem_2044C {
             }
             System.out.println(totalMonkeySeated);
         }
-        
+        sc.close();
     }
 }
