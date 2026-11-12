@@ -12,7 +12,6 @@ public class BePositive_2149A {
             }
             int negativeCount=0;
             int zeroCount=0;
-            int postiveCount=0;
             int answer=0;
             for(int i=0;i<n;i++){
                 if(arr[i]<0){
@@ -20,9 +19,6 @@ public class BePositive_2149A {
                 }
                 else if(arr[i]==0){
                     zeroCount++;
-                }
-                else{
-                    postiveCount++;
                 }
             }
             if(negativeCount%2==1){
