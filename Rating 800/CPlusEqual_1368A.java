@@ -9,17 +9,14 @@ public class CPlusEqual_1368A {
             int b=sc.nextInt();
             int n=sc.nextInt();
             int cnt=0;
-            if(a>b){
-                while(b<=n){
-                    b+=a;
-                    cnt++;
-                }
-            }
-            else{
-                while(a<=n){
+            while(a<=n && b<=n){
+                if(a<=b){
                     a+=b;
-                    cnt++;
                 }
+                else{
+                    b+=a;
+                }
+                cnt++;
             }
             System.out.println(cnt);
         }
