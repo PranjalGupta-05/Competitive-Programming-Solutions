@@ -8,14 +8,16 @@ public class TwoElevators_1729A {
             int a=sc.nextInt();
             int b=sc.nextInt();
             int c=sc.nextInt();
-            if(a==1){
+            int time1=Math.abs(a-1);
+            int time2=Math.abs(b-c)+Math.abs(c-1);
+            if(time1<time2){
                 System.out.println(1);
-            }
-            else if((Math.abs(b-c))<(a-1)){
+            } 
+            else if(time2<time1){
                 System.out.println(2);
-            }
-            else if((Math.abs(b-c))==(a-1)){
-                System.out.println(3);
+            } 
+            else{
+                System.out.println(3); 
             }
         }
     }
