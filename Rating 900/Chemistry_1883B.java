@@ -21,9 +21,10 @@ public class Chemistry_1883B{
                     oddCnt++;
                 }
             }
-            if(k >= oddCnt - 1){
+            if(k>=oddCnt-1){
                 System.out.println("YES");
-            } else {
+            } 
+            else{
                 System.out.println("NO");
             }
             
