@@ -12,24 +12,25 @@ public class Elections_1593A {
             int resA=0;
             int resB=0;
             int resC=0;
-            if(a==b && b==c){
-                System.out.println(1+" "+1+" "+1);
-                continue;
-            }
-            if(maximum==a){
+            if(a>b && a>c){
                 resA=0;
                 resB=maximum-b+1;
                 resC=maximum-c+1;
             }
-            else if(maximum==b){
+            else if(b>a && b>c){
                 resB=0;
                 resA=maximum-a+1;
                 resC=maximum-c+1;
             }
-            else{
+            else if(c>a && c>b){
                 resC=0;
                 resA=maximum-a+1;
                 resB=maximum-b+1;
+            }
+            else{
+                resA=maximum-a+1;
+                resB=maximum-b+1;
+                resC=maximum-c+1;
             }
             System.out.println(resA+" "+resB+" "+resC);
         }
