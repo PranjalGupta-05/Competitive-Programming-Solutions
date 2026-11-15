@@ -6,10 +6,17 @@ public class Rook_1907A {
         int t=sc.nextInt();
         while(t-- >0){
             String pos=sc.next();
-            int x=pos.charAt(0)-'a'+1;
-            int y=pos.charAt(1)-'0';
-            for(int i=1;i<=8;i++){
-                System.out.println((char)('a'+i-1)+""+y);
+            char col=pos.charAt(0);
+            char row=pos.charAt(1);
+            for(char r='1';r<='8';r++){
+                if(r!=row){
+                    System.out.println(col+""+r);
+                }
+            }
+            for(char c='a';c<='h';c++){
+                if(c!=col){
+                    System.out.println(c+""+row);
+                }
             }
         }
     }
