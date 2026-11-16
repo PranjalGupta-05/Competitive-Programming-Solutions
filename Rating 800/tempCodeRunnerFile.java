@@ -1,23 +1,30 @@
 import java.util.*;
 
-public class BrainsPhotos_707A {
+public class Journey_2051B{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n= sc.nextInt();
-        int m= sc.nextInt();
-        boolean coloured=false;
-        while(n-- >0){
-            while(m-- >0){
-                char ch = sc.next().charAt(0);
-                if(ch=='C' || ch=='M' || ch=='Y'){
-                    coloured=true;
-                }
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-- >0){
+            long n=sc.nextLong();
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int c=sc.nextInt();
+            long sum=(long)a+b+c;
+            long k=n/sum;
+            long rem=n%sum;
+            long days=k*3;
+            if(rem==0){
+                System.out.println(days);
             }
-        }
-        if(coloured){
-            System.out.println("#Color");
-        }else{
-            System.out.println("#Black&White");
+            else if(rem<=a){
+                System.out.println(days+1);
+            }
+            else if(rem<=a+b){
+                System.out.println(days+2);
+            }
+            else{
+                System.out.println(days+3);
+            }
         }
     }
 }
