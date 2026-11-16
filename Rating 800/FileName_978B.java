@@ -5,12 +5,12 @@ public class FileName_978B {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         String s=sc.next();
-        int xCnt=0;
+        int xCntToRemove=0;
         for(int i=0;i<n-2;i++){
             if(s.charAt(i)=='x' && s.charAt(i+1)=='x' && s.charAt(i+2)=='x'){
-                xCnt++;
+                xCntToRemove++;
             }
         }
-        System.out.println(xCnt);
+        System.out.println(xCntToRemove);
     }
 }
