@@ -9,10 +9,17 @@ public class SkibidusandOhio_2065B {
             int n=s.length();
             int cnt=0;
             for(int i=0;i<n-1;i++){
-                if(s.charAt(i)==s.charAt(i+1))
+                if(s.charAt(i)==s.charAt(i+1)){
                     cnt++;
+                    break;
+                }
             }
-            System.out.println(n-cnt);
+            if(cnt>0){
+                System.out.println(1);
+            } 
+            else{
+                System.out.println(n);
+            }
         }
     }
 }
