@@ -3,22 +3,26 @@ import java.util.*;
 public class OddGrasshopper_1607B{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        int t=sc.nextInt();
+        long t=sc.nextLong();
         while(t-- >0){
-            long x0=sc.nextInt();
-            long n=sc.nextInt();
-            long finalX=x0;
-            long length=1;
-            while(n-- >0){
-                if(x0%2==1){
-                    finalX-=length;
-                }
-                else{
-                    finalX+=length;
-                }
-                length++;
+            long x0=sc.nextLong();
+            long n=sc.nextLong();
+            long d=0;
+            long rem=n%4;
+            if(rem==1){
+                d=-n;
+            }else if(rem==2){
+                d=1;
+            } 
+            else if(rem==3){
+                d=n+1;
             }
-            System.out.println(finalX);
+            if(x0%2!=0){
+                System.out.println(x0-d);
+            } 
+            else{
+                System.out.println(x0+d);
+            }
         }
     }
 }
