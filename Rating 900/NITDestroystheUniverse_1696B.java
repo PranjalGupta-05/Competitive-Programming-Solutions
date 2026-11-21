@@ -41,7 +41,7 @@ public class NITDestroystheUniverse_1696B{
                 }
                 ans++;
             }
-            System.out.println(ans);
+            System.out.println(Math.min(ans, 2));
         }
     }
 }
