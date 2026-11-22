@@ -8,30 +8,23 @@ public class Showering_1999C {
             int n=sc.nextInt();
             int s=sc.nextInt();
             int m=sc.nextInt();
-            int[] a=new int[m+1];
+            int prevEnd=0;
+            boolean canShower=false;
             while(n-- >0){
                 int l=sc.nextInt();
                 int r=sc.nextInt();
-                for(int i=l;i<=r;i++){
-                    a[i]=1;
+                if(l-prevEnd>=s){
+                    canShower=true;
                 }
+                prevEnd=r;
             }
-            int cnt=0;
-            int maxCnt=0;
-            for(int i=0;i<=m;i++){
-                if(a[i]==0){
-                    cnt++;
-                }
-                else{
-                    maxCnt=Math.max(maxCnt,cnt+1);
-                    cnt=0;
-                }
+            if(m-prevEnd>=s){
+                canShower=true;
             }
-            maxCnt=Math.max(maxCnt,cnt);
-            if(maxCnt>=s){
+            if(canShower){
                 System.out.println("YES");
             }
-            else{
+             else{
                 System.out.println("NO");
             }
         }
