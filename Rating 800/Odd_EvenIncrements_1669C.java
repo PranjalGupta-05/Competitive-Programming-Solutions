@@ -11,17 +11,17 @@ public class Odd_EvenIncrements_1669C {
                 arr[i]=sc.nextInt();
             }
             boolean flag=true;
-            int lastOddplace=arr[1];
-            int lastEvenplace=arr[0];
+            int lastOddplace=arr[1]%2;
+            int lastEvenplace=arr[0]%2;
             for(int i=2;i<n;i++){
                 if(i%2==0){
-                    if(arr[i]!=lastEvenplace){
+                    if(arr[i]%2!=lastEvenplace){
                         flag=false;
                         break;
                     }
                 }
                 else{
-                    if(arr[i]!=lastOddplace){
+                    if(arr[i]%2!=lastOddplace){
                         flag=false;
                         break;
                     }
