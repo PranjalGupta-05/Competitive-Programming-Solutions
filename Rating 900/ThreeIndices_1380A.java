@@ -14,7 +14,7 @@ public class ThreeIndices_1380A {
             for(int i=1;i<n-1;i++){
                 if(arr[i-1]<arr[i] && arr[i]>arr[i+1]){
                     System.out.println("YES");
-                    System.out.println((i+1)+" "+(i+2)+" "+(i+3));
+                    System.out.println((i)+" "+(i+1)+" "+(i+2));
                     found=true;
                     break;
                 }
